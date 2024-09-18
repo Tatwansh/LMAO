@@ -23,4 +23,4 @@ def retr(q):
                      "updated": result.updated
                      })
     df = pd.DataFrame(data)
-    print(df.head())
+    print(df['title'][:10])
