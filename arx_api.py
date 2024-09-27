@@ -3,7 +3,7 @@ import pandas as pd
 import re
 
 def retr(q):
-    search = arxiv.Search(query=q, max_results=100, sort_by=arxiv.SortCriterion.SubmittedDate)
+    search = arxiv.Search(query=q, max_results=10, sort_by=arxiv.SortCriterion.SubmittedDate)
     papers = list(search.results())
     data = []
 
